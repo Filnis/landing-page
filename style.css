@@ -10,10 +10,27 @@ body > *{
 .header, .section_intro{
     display: flex;
     align-items: center;
-    gap: 40px;
     background-color: #1F2937;
     margin-top: 0px;
-    padding-top: 30px;
+    padding-top: 0px;
+}
+.header{
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.links > * {
+    padding: 30px 10px 10px 10px;
+    flex: 1 0 132.5px;
+}
+
+.links > *:hover{
+    background-color: #506b91;
+}
+.section_intro{
+    gap: 40px;
 }
 
 .header-logo{
@@ -21,6 +38,10 @@ body > *{
     font-size: 24px;
     font-weight: bold;
     margin-right: auto;
+}
+.header-link{
+    display: flex;
+    justify-content: center;
 }
 
 .header-link, .intro_text > p, button{
@@ -35,7 +56,7 @@ a {
 }
 
 .section_intro{
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 120px;
     align-items: stretch; 
 }
