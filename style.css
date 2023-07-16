@@ -1,5 +1,5 @@
 body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     margin: 0;
 }
 
@@ -7,7 +7,7 @@ body > *{
     padding: 0px 200px;
 }
 
-.header, .section_intro, .footer{
+.header, .section_intro{
     display: flex;
     align-items: center;
     gap: 40px;
@@ -23,9 +23,15 @@ body > *{
     margin-right: auto;
 }
 
-.header-link, .intro_text > p, .intro_text > button{
+.header-link, .intro_text > p, button{
     color: #E5E7EB;
     font-size: 18px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
 }
 
 .section_intro{
@@ -39,17 +45,21 @@ body > *{
     flex-basis: 0;
 }
 
-.intro_text > h1, button{
+.intro_text > h1{
     color: #F9FAF8;
     font-size: 48px;
     font-weight: bold; 
 }
 
-.intro_text > button{
+button{
     background-color: #3882f6;
     padding: 5px 30px;
     border-color: transparent;   
-    border-radius: 10px; 
+    border-radius: 10px;
+    color: #F9FAF8;
+    font-weight: bold; 
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .intro_image{
@@ -104,4 +114,83 @@ body > *{
 
 .illustration > p {
     text-align: center;
+}
+
+.section_quote{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section_quote > *{
+    padding: 0 250px;
+}
+.quote{
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.signature{
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.section_calltoaction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 400px;
+}
+
+.bluecont{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 10px 50px; 
+    flex-wrap: wrap;
+}
+
+.bluecont > button{
+    border-style: solid;
+    border-color: #F9FAF8;
+    margin: auto;
+}
+.calltoaction_text{
+    color: #F9FAF8;
+    margin: auto;
+}
+
+.calltoaction_text > h2{
+    padding: 0;
+    margin: 10px;
+}
+
+.calltoaction_text > p{
+    padding: 0;
+    margin: 10px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #1F2937;
+}
+
+.footer > p{
+    color: #E5E7EB;
 }
